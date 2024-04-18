@@ -1,0 +1,9 @@
+server:
+  port: 9090
+
+superdoc:
+  uri: https://superdoc.bg/
+  job-config:
+    batch-size: 50
+    job-cron: 0 0/1 * * * ? # Every minute
+    disabled: true
