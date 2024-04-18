@@ -43,7 +43,7 @@ public class SuperDocService {
 
                 LocalDate earliestSlotDate = LocalDate.parse(earliestSlotDateString, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
-                if (LocalDate.now().plusDays(3).isAfter(earliestSlotDate)) {
+                if (LocalDate.now().plusDays(7).isAfter(earliestSlotDate)) {
                     System.err.println("AVAILABLE DATE: " + earliestSlotDate + ", Time: " + earliestSlot.getText() + " Time "
                             + earliestSlot.getTime());
                     playSound("C:\\Windows\\Media\\Alarm01.wav");
